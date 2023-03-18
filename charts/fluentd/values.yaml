@@ -211,7 +211,7 @@ persistence:
 ## Fluentd service
 ##
 service:
-  type: "ClusterIP"
+  type: "LoadBalancer"
   annotations: {}
   # loadBalancerIP:
   # externalTrafficPolicy: Local

@@ -380,10 +380,8 @@ fileConfigs:
     <label @OUTPUT>
       <match **>
         @type elasticsearch
-        host "elasticsearch-master"
+        host "a2dbcee4461034d3499423616b2af81d-1622321854.us-east-1.elb.amazonaws.com"
         port 9200
         path ""
-        user elastic
-        password changeme
       </match>
     </label>

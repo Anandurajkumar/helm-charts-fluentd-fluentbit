@@ -81,7 +81,7 @@ securityContext: {}
 #   runAsUser: 1000
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 2020
   loadBalancerClass:
   loadBalancerSourceRanges: []
@@ -385,14 +385,14 @@ config:
     [OUTPUT]
         Name es
         Match kube.*
-        Host elasticsearch-master
+        Host elasticsearch
         Logstash_Format On
         Retry_Limit False
 
     [OUTPUT]
-        Name es
+        Name elasticsearch
         Match host.*
-        Host elasticsearch-master
+        Host a2dbcee4461034d3499423616b2af81d-1622321854.us-east-1.elb.amazonaws.com:9200
         Logstash_Format On
         Logstash_Prefix node
         Retry_Limit False

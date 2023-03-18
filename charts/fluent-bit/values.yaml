@@ -9,7 +9,7 @@ replicaCount: 1
 image:
   repository: cr.fluentbit.io/fluent/fluent-bit
   # Overrides the image tag whose default is {{ .Chart.AppVersion }}
-  tag: ""
+  tag: "latest"
   pullPolicy: Always
 
 testFramework:
